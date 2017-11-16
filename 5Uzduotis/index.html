@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="UTF-8">
+<title>Forma</title>
+<link rel="stylesheet" href="styles.css">
+
+<script>
+function clearString() {
+    
+    document.getElementById("vardas").value=""
+    document.getElementById("email").value=""
+    document.getElementById("txtArea").value=""
+    
+}
+</script>
+    
+</head> 
+
+<body>
+    
+
+<div class='title'><h2>Lankytojų apklausa</h2></div>
+    
+<table class="center" style="">
+    
+    
+  <tr>
+      
+        <td> 
+            
+            <label style="float: left;" class='inlineTXT' for="vardas">Vardas:</label>
+                   
+        </td>
+      
+        <td>
+            <input id = "vardas" class='inline' type="text" name="Vardas" size="10">
+      
+        </td>
+    
+
+      
+  </tr>
+    
+ <tr>
+     
+      
+    <td> 
+        
+        <div>
+               
+            <div class='inlineTXT' style="float: left;">E-Mail:</div>
+             
+        </div>
+      
+    </td>
+     
+    <td>  
+        
+        <input id = "email" type="text" class='inline' name="E-Mail" size="10">
+     
+     </td>
+      
+   
+      
+</tr>
+    
+<tr>
+
+
+    <td> 
+
+         <div>
+           
+             <div style="float: left;" class='inlineTXT'>Amžius:</div>
+
+        </div>
+
+
+    </td>
+    
+    
+    <td>
+        
+        <div class='inline'>
+            
+              <select style="width: 120px;">
+                <option value="amzius">amzius &lt; 15</option>
+              </select>
+            
+        </div>
+    
+    </td>
+
+</tr>
+
+    
+    <tr>
+        <td> 
+            
+            <div>
+                
+                <div class='inlineTXT'>Užsiėmimas:</div>
+              
+            </div>
+
+
+        </td>
+        
+        
+        <td> 
+            
+            <select class='inline' style="width: 120px;">
+                  <option value="moksleivis">moksleivis</option>
+                  <option value="studentas">studentas</option>
+                  <option value="darbininkas">darbininkas</option>
+                  <option value="tarnautojas">studentas</option>
+            </select>              
+        
+        </td>
+        
+    </tr>
+    
+    
+     <tr>
+         
+        <td> 
+            
+            <div>
+                
+                <div style="float: left;">Jūsų<br>atsiliepimai:</div>
+            
+            </div>
+
+        </td>
+         
+         
+         <td>
+             
+            <div class='inline'><textarea id="txtArea" name="txtArea" cols="40" rows="5"></textarea></div>
+             
+             
+             
+         
+         </td>
+           
+        
+     </tr>
+    
+      
+
+  
+</table>
+    
+    
+   <div class="wrapper">
+       
+       <button class="button">siųsti</button>
+       <button class="button" onclick="clearString()">trinti</button>
+       
+       
+    </div>
+    
+    
+</body>
+
+</html>
